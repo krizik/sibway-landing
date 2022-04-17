@@ -106,8 +106,6 @@
   // Smooth scroll section
 
   $('.nav').navScroll({
-    /*     mobileDropdown: true,
-    mobileBreakpoint: 768, */
     navHeight: 70,
     scrollSpy: true,
     mobileDropdownClassName: 'navbar-nav',
