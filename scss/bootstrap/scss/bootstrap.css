@@ -11480,4 +11480,9 @@ fieldset:disabled .btn {
 .logo {
   width: 120px;
 }
+
+.team-item .fa {
+  color: #0d6efd;
+  padding-right: 10px;
+}
 /*# sourceMappingURL=bootstrap.css.map */

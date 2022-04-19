@@ -104,10 +104,14 @@
   });
 
   // Smooth scroll section
-
-  $('.nav').navScroll({
-    navHeight: 70,
-    scrollSpy: true,
-    mobileDropdownClassName: 'navbar-nav',
-  });
+  var nav = $('#nav');
+  console.log('!!!!!!!!', nav);
+  if (nav.length) {
+    $('#nav').navScroll({
+      navHeight: 70,
+      scrollSpy: true,
+      activeParent: true,
+      mobileDropdownClassName: 'navbar-nav',
+    });
+  }
 })(jQuery);
