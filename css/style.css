@@ -1,4 +1,13 @@
+/* @font-face {
+  font-family: 'Gilroy-Medium';
+  src: url('../fonts/Gilroy/Gilroy-Medium.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+} */
+
 /********** Template CSS **********/
+body {
+}
 :root {
   --primary: #28265b;
   --secondary: #179cda;
