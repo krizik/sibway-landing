@@ -1,12 +1,45 @@
-/* @font-face {
+@font-face {
+  font-family: 'Gilroy-Regular';
+  src: url('../fonts/Gilroy/Gilroy-Regular.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
   font-family: 'Gilroy-Medium';
   src: url('../fonts/Gilroy/Gilroy-Medium.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
-} */
+}
+@font-face {
+  font-family: 'Gilroy-Semibold';
+  src: url('../fonts/Gilroy/Gilroy-Semibold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Gilroy-Bold';
+  src: url('../fonts/Gilroy/Gilroy-Bold.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TTNorms-Light';
+  src: url('../fonts/TTNorms/TTNorms-Light.ttf') format('truetype');
+  font-weight: 100;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'TTNorms-Bold';
+  src: url('../fonts/TTNorms/TTNorms-Bold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
 
 /********** Template CSS **********/
 body {
+  font-family: 'Gilroy-Regular', sans-serif;
+  /*  font-family: 'TTNorms-Light', sans-serif; */
 }
 :root {
   --primary: #28265b;
