@@ -70,18 +70,19 @@
   });
 
   // Header carousel
-  $('.header-carousel').owlCarousel({
+  /*   $('.header-carousel').owlCarousel({
     autoplay: false,
     smartSpeed: 1500,
+    itemsDesktop: false,
     items: 1,
     dots: false,
     loop: true,
-    nav: true,
+    nav: false,
     navText: [
       '<i class="bi bi-chevron-left"></i>',
       '<i class="bi bi-chevron-right"></i>',
     ],
-  });
+  }); */
 
   // Testimonials carousel
   $('.testimonial-carousel').owlCarousel({
@@ -105,13 +106,21 @@
 
   // Smooth scroll section
   var nav = $('#nav');
-  console.log('!!!!!!!!', nav);
+  console.log('!!!!!!!!', nav.length);
   if (nav.length) {
     $('#nav').navScroll({
-      navHeight: 70,
+      navHeight: 0,
       scrollSpy: true,
-      activeParent: true,
+      // activeParent: true,
       mobileDropdownClassName: 'navbar-nav',
     });
   }
+  $(function () {
+    $('.nav-item').click(function () {
+      // remove classes from all
+      $('.nav-item').removeClass('active');
+      // add class to the one we clicked
+      $(this).addClass('active');
+    });
+  });
 })(jQuery);

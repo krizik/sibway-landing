@@ -26,3 +26,11 @@ h5,
 h6 {
   font-family: 'TTNorms-Bold';
 }
+.header-carousel {
+  .img-fluid {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    width: 100%;
+  }
+}
